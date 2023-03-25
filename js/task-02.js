@@ -7,16 +7,16 @@ const ingredients = [
   "Condiments",
 ];
 
-const list = document.querySelector("#ingredients");
-const arrIngredients = [];
 
-for (let i = 0; i < ingredients.length; i++) {
-  const ingredient = document.createElement("li");
-  ingredient.classList.add("item");
-  ingredient.textContent = ingredients[i];
+const ingredientsTitle = document.querySelector("#ingredients")
 
-  arrIngredients.push(ingredient);
-  console.log(ingredient);
-}
-console.log(arrIngredients);
-list.prepend(...arrIngredients);
+ingredients.forEach(element => {
+    const elementList = document.createElement("li");
+    elementList.textContent = element;
+    elementList.classList.add('item');
+    ingredientsTitle.append(elementList);
+});
+
+
+console.log(ingredientsTitle);
+
