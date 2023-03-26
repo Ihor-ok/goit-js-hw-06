@@ -22,3 +22,16 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.item-img {
+  
+  width: 300px;
+ margin-left: 20px;
+  
+}
+
+.gallery {
+  list-style: none;
+  display: inline-flex;
+  
+}
