@@ -1,9 +1,6 @@
 const refInput = document.querySelector('#name-input');
 const refName = document.querySelector('#name-output')
 
-// console.log(refInput.currentTarget.elements);
-console.log(refInput);
-console.log(refName);
 
 refInput.addEventListener('input', onInputChange)
 
@@ -14,5 +11,3 @@ function onInputChange(event) {
     } else { refName.textContent = "Anonymous"};
    
 };
-
-// console.log("");
